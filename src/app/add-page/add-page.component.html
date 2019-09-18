@@ -1,0 +1,55 @@
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Main content -->
+  <section class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-warning">
+          <div class="box-header with-border">
+            <h3 class="box-title">Add Page</h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <form role="form" class="form-horizontal">
+              <!-- text input -->
+              <div class="form-group">
+                <label class="col-sm-3">Page Name</label>
+                <div class="col-sm-9"><input type="text" name="pageName" class="form-control" placeholder="Enter ..."  [(ngModel)]="pageName"></div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3">Page Describtion</label>
+                <div class="col-sm-9"><input type="text" name="pageDesc" class="form-control" placeholder="Enter ..." [(ngModel)]="pageDesc"></div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3">Page Route</label>
+                <div class="col-sm-9"><input type="text" name="pageRoute" class="form-control" placeholder="Enter ..." [(ngModel)]="pageRoute"></div>
+              </div>
+   
+
+            </form>
+          </div>
+          <div class="box-body">
+            
+          </div>
+          <!-- /.box-body -->
+          <div class="box-footer">
+            <button type="submit" class="btn btn-success pull-right" (click)="addPage()">Add Page</button>
+          </div>
+          <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+
+
+      </div>
+      <!-- /.col -->
+
+
+    </div>
+    <!-- /.row -->
+
+  </section>
+  <!-- /.content -->
+
+</div>
+<!-- /.row -->

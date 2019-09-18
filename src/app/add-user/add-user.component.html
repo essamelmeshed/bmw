@@ -1,0 +1,141 @@
+
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-warning">
+        <div class="box-header with-border">
+          <h3 class="box-title">Add New</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <form role="form" class="form-horizontal">
+            <!-- text input -->
+            <div class="form-group">
+              <label class="col-sm-3">First Name</label>
+              <div class="col-sm-9"><input type="text" name="FirstName" class="form-control" placeholder="Enter ..."
+                  [(ngModel)]="dataModelObj.firstName"></div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3">Last Name</label>
+              <div class="col-sm-9"><input type="text" name="LastName" class="form-control" placeholder="Enter ..."
+                  [(ngModel)]="dataModelObj.lastName"></div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3">Email</label>
+              <div class="col-sm-9"><input type="text" name="Email" class="form-control" placeholder="Enter ..."
+                  [(ngModel)]="dataModelObj.email"></div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3">Password</label>
+              <div class="col-sm-9"><input type="password" name="Password" class="form-control" placeholder="Enter ..."
+                  [(ngModel)]="dataModelObj.password"></div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3">Branch</label>
+              <div class="col-sm-9"><select class="form-control" name="branchId" (change)="selectbranch()" [(ngModel)]="dataModelObj.branchId">
+                  <option *ngFor="let b of branchNameArr; let i=index">{{branchNameArr[i]}}</option>
+                  <!-- <option>Branch 2</option>
+                  <option>Branch 3</option>
+                  <option>Branch 4</option>
+                  <option>Branch 5</option> -->
+                </select></div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3">&nbsp;</label>
+              <div class="col-sm-9">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">Is advisor</label>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="box-body">
+          <table class="table table-striped table-bordered table-hover">
+            <tbody>
+              <tr>
+                <th>Page Name</th>
+                <th>Navigate</th>
+                <th>Display</th>
+                <th>Insert</th>
+                <!-- <th>Edit</th> -->
+                <th>Update</th>
+                <th>Delete</th>
+              </tr>
+              <tr *ngFor="let count of dataModelObj.userPermissions; let i=index">
+                <td><select class="form-control" name="pageId" [(ngModel)]="dataModelObj.userPermissions[i].pageId">
+                    <option *ngFor="let p of pageNameArr; let i=index">{{pageNameArr[i]}}</option>
+                    <!-- <option>Branch 2</option>
+                    <option>Branch 3</option>
+                    <option>Branch 4</option>
+                    <option>Branch 5</option> -->
+                  </select></td>
+                <td>
+                  <div class="checkbox"><label><input type="checkbox" name="navigate"
+                        [(ngModel)]="dataModelObj.userPermissions[i].navigate"></label></div>
+                </td>
+                <td>
+                  <div class="checkbox"><label><input type="checkbox" name="retrieve"
+                        [(ngModel)]="dataModelObj.userPermissions[i].retrieve"></label></div>
+                </td>
+                <td>
+                  <div class="checkbox"><label><input type="checkbox" name="insert"
+                        [(ngModel)]="dataModelObj.userPermissions[i].insert"></label></div>
+                </td>
+                <!-- <td><div class="checkbox"><label><input type="checkbox" name="Edit" [(ngModel)]="dataModelObj.userPermissions[i].Edit"></label></div></td> -->
+                <td>
+                  <div class="checkbox"><label><input type="checkbox" name="update"
+                        [(ngModel)]="dataModelObj.userPermissions[i].update"></label></div>
+                </td>
+                <td>
+                  <div class="checkbox"><label><input type="checkbox" name="delete"
+                        [(ngModel)]="dataModelObj.userPermissions[i].delete"></label></div>
+                </td>
+              </tr>
+              <!-- <tr>
+                  <td><select class="form-control"><option>Branch 1</option><option>Branch 2</option><option>Branch 3</option><option>Branch 4</option><option>Branch 5</option></select></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                </tr>
+                <tr>
+                  <td><select class="form-control"><option>Branch 1</option><option>Branch 2</option><option>Branch 3</option><option>Branch 4</option><option>Branch 5</option></select></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                  <td><div class="checkbox"><label><input type="checkbox"></label></div></td>
+                </tr> -->
+            </tbody>
+          </table>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          <button type="submit" class="btn btn-success pull-right" (click)="addUser()">Add User</button>
+        </div>
+        <!-- /.box-footer -->
+      </div>
+      <!-- /.box -->
+
+
+    </div>
+    <!-- /.col -->
+
+
+  </div>
+  <!-- /.row -->
+
+</section>
+<!-- /.content -->
+
+</div>
+<!-- /.row -->

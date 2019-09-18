@@ -1,0 +1,211 @@
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+
+    <!-- Sidebar user panel (optional) -->
+    <div class="user-panel">
+      <div class="pull-left image">
+        <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+      </div>
+      <div class="pull-left info">
+        <p>Alexander Pierce</p>
+        <!-- Status -->
+        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+      </div>
+    </div>
+
+
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="header">Access Menu</li>
+      <li class="active"><a routerLink="/dashboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+
+
+
+      <!-- -->
+      <li class="treeview">
+        <a routerLink="/newcars"><i class="fa fa-car"></i> <span>Cars</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+
+
+        <ul class="treeview-menu">
+          <li><a routerLink="/newcars"><i class="fa fa-circle-o"></i> New Cars</a></li>
+          <li><a routerLink="/usedcars"><i class="fa fa-circle-o"></i> Used Cars</a></li>
+        </ul>
+      </li>
+
+
+      <!-- -->
+      <li class="treeview">
+        <a routerLink="/tdrequests"><i class="fa fa-car"></i> <span>Test Drive</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/tdrequests"><i class="fa fa-circle-o"></i> TD Requests</a></li>
+        </ul>
+      </li>
+
+
+      <!-- -->
+      <li class="treeview">
+        <a routerLink="/appointments"><i class="fa fa-wrench"></i> <span>Service</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/appointments"><i class="fa fa-circle-o"></i> Appointments</a></li>
+          <li><a routerLink="/servicehistory"><i class="fa fa-circle-o"></i> Service History</a></li>
+        </ul>
+      </li>
+      <!-- -->
+      <li class="treeview">
+        <a routerLink="/rarequests"><i class="fa fa-support "></i> <span>Roadside Assistance</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/rarequests"><i class="fa fa-circle-o"></i> RA Requests</a></li>
+        </ul>
+      </li>
+      <!-- -->
+      <li class="treeview">
+        <a routerLink="/news"><i class="fa fa-file-text"></i> <span>News & Events</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/news"><i class="fa fa-circle-o"></i> Manage News</a></li>
+          <li><a routerLink="/events"><i class="fa fa-circle-o"></i> Manage Events</a></li>
+          <li><a routerLink="/offers"><i class="fa fa-circle-o"></i> Manage Offers</a></li>
+        </ul>
+      </li>
+      <!-- -->
+      <li class="treeview">
+        <a routerLink="/messages"><i class="fa fa-bell"></i> <span>Communication</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/messages"><i class="fa fa-circle-o"></i> Messages</a></li>
+          <li><a routerLink="/notifications"><i class="fa fa-circle-o"></i> Notifications</a></li>
+        </ul>
+      </li>
+      <!-- -->
+      <li class="treeview">
+        <a routerLink="/customers"><i class="fa fa-users"></i> <span>Customers</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a routerLink="/customers"><i class="fa fa-circle-o"></i> Manage Customers</a></li>
+        </ul>
+      </li>
+
+
+
+   
+
+       <li class="treeview menu-open">
+        <a routerLink="manage/branchs">
+          <i class="fa fa-share"></i> <span>Settings</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu" style="display: block;">
+
+          <li class="treeview">
+            <a routerLink="manage/branchs"><i class="fa fa-circle-o"></i> Hierarchy
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu" style="display: none;">
+              <li><a routerLink="manage/branchs"><i class="fa fa-circle-o"></i> Manage Branches </a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="treeview">
+            <a routerLink="config/newcars"><i class="fa fa-circle-o"></i> Car Config
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu" style="display: none;">
+              <li><a routerLink="config/newcars"><i class="fa fa-circle-o"></i> New Cars </a></li>
+              <li><a routerLink="config/usedcars"><i class="fa fa-circle-o"></i> Used Cars </a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="treeview">
+            <a routerLink="config/services"><i class="fa fa-circle-o"></i> Service Config
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu" style="display: none;">
+              <li><a routerLink="config/services"><i class="fa fa-circle-o"></i> Services </a></li>
+              <li><a routerLink="config/serviceadvisor"><i class="fa fa-circle-o"></i> Service Advisor </a></li>
+              <li><a routerLink="config/calender"><i class="fa fa-circle-o"></i> Clander </a></li>
+            </ul>
+          </li>
+
+
+          <li class="treeview">
+            <a routerLink="config/tdmodels"><i class="fa fa-circle-o"></i> TD Config
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu" style="display: none;">
+              <li><a routerLink="config/tdmodels"><i class="fa fa-circle-o"></i> TD Models </a></li>
+              <li><a routerLink="config/AddPage"><i class="fa fa-circle-o"></i> ADD Page </a></li>
+              <li><a routerLink="config/tdmodels"><i class="fa fa-circle-o"></i> ADD Branch </a></li>
+              <li><a routerLink="config/AddUser"><i class="fa fa-circle-o"></i> ADD User </a></li>
+            </ul>
+
+        
+          </li>
+
+
+          <li class="treeview">
+            <a routerLink="manage/roles"><i class="fa fa-circle-o"></i> Security
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu" style="display: none;">
+              <li><a routerLink="manage/roles"><i class="fa fa-circle-o"></i> Mange Roles </a></li>
+              <li><a routerLink="manage/users"><i class="fa fa-circle-o"></i> Mange Users </a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </li>
+
+
+
+
+
+    </ul>
+    <!-- /.sidebar-menu -->
+  </section>
+  <!-- /.sidebar -->
+</aside>
