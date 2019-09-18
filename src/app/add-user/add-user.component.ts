@@ -135,6 +135,12 @@ export class AddUserComponent implements OnInit {
     this.dataModelObj.userPermissions.push(new permissin());
   }
 
+
+  addNo() {
+
+ console.log(this.branchRes)
+  }
+
   ngOnInit() {
     this.loadBranchesList()
     this.loadPagesList();
